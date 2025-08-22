@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="web.css">
+  <style>
+    body {
+      background: linear-gradient(red, white);
+      margin: 0;
+      height: 100vh;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 30px;
+    }
+
+    .container>div {
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .special {
+      font-family: "Lucida Console", "Courier New", monospace;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 18px;
+      margin-left: 40px;
+    }
+
+    .navitems {
+      margin-right: 40px;
+    }
+
+    .navitems a {
+      text-decoration: none;
+      color: black;
+      padding: 0px 35px;
+    }
+
+    .a {
+      height: 300px;
+      text-align: center;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding: 40px;
+    }
+
+    .container1 {
+      display: grid;
+      grid-template-areas: "img1 img1 img2"
+        "img1 img1 img3"
+        "img4 img5 img6";
+
+    }
+
+    .container1 img {
+      width: 100%;
+      border: 5px solid white;
+    }
+
+    .i1 {
+      grid-area: img1;
+    }
+
+    .i1 img {
+      height: 100%;
+    }
+
+    .i2 {
+      grid-area: img2;
+    }
+
+    .i3 {
+      grid-area: img3;
+    }
+
+    .i4 {
+      grid-area: img4;
+    }
+
+    .i5 {
+      grid-area: img5;
+    }
+
+    .i6 {
+      grid-area: img6;
+
+    }
+        .Briyanis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: -20px;
+}
+.Briyani img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 0.5rem;
+}
+    .Briyani {
+  background:linear-gradient(rgba(255, 0, 0, 0.81), white);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+.Briyani:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.Briyani img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 0.5rem;
+}
+.Briyani h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.Briyani p {
+  color: black;
+  font-size: 1rem;
+}
+.head{
+    font-style: italic;
+  }
+@media screen and (max-width: 500px) {
+  .Briyanis{
+      grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+
+  }
+  body{
+    width: 100%;
+  }
+  .mainimage{
+    display: none;
+  }
+  .head{
+    font-style: italic;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="special"><img class="logo" src="https://cdn.pixabay.com/photo/2020/08/05/13/28/eco-5465482_1280.png"
+        alt="">
+    </div>
+    <div class="navitems">
+      <a href="#about">ABOUT</a>
+      <a href="#meals">MEALS</a>
+      <a href="#pricing">PRICING</a>
+      <a href="#test">TESTINOMIALS</a>
+    </div>
+  </div>
+  <div class="head">
+    <div>
+      <h1 class="head">A healthy meal delivered to your door, every single day</h1>
+      <p>
+        The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal
+        tastes and nutritional needs.
+      </p>
+      <p>250,000+ meals delivered last year!</p>
+    </div>
+    <div>
+      <img class="mainimage" style="height: 450px;" src="https://omnifood.dev/img/hero-min.png" alt="">
+    </div>
+  </div>
+  <div class="a" id="about">
+    <h1>About</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam dolor ipsam possimus accusamus soluta deleniti
+      perferendis velit tempore, facilis sit veniam ex, nostrum voluptatum harum nam et culpa obcaecati sunt. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Tempore, odit nam dolore reiciendis repellat vero ipsa ullam
+      rerum a. Reprehenderit debitis iusto sint molestiae obcaecati, praesentium voluptatum. Accusamus, iste incidunt?
+    </p>
+  </div>
+  <div class="a"  id="meals">
+    <h1>MEALS</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam dolor ipsam possimus accusamus soluta deleniti
+      perferendis velit tempore, facilis sit veniam ex, nostrum voluptatum harum nam et culpa obcaecati sunt. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Tempore, odit nam dolore reiciendis repellat vero ipsa ullam
+      rerum a. Reprehenderit debitis iusto sint molestiae obcaecati, praesentium voluptatum. Accusamus, iste incidunt?
+    </p>
+  </div>
+  <section class="Briyanis" id="Briyanis">
+			<div class="Briyani">
+				<img src="https://media.istockphoto.com/id/1334383289/photo/prawn-or-shrimp-biryani-fish-biryani-spicy-and-delicious-malabar-biryani-pulao-basmati-rice.jpg?s=612x612&w=0&k=20&c=V2JjZeeOlA5apjhBQqtd_UHZScVFZrkWiMMogxQtr70=" alt="Album 1">
+				<h3>Chicken Briyani</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam adipisci quo dignissimos distinctio saepe? Doloremque libero qui obcaecati! Maiores dolores voluptatem facere sit illum repudiandae nobis odit dignissimos neque.</p>
+			</div>
+			<div class="Briyani">
+				<img src="https://cdn.uengage.io/uploads/7057/image-7954-1752940901.JPG" alt="Album 2">
+				<h3>Mogalai Briyani</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vitae placeat facilis aspernatur, dolor libero earum saepe, repudiandae cumque incidunt aperiam voluptatem minus consectetur voluptatum nulla eos unde nihil esse?</p>
+			</div>
+			<div class="Briyani">
+				<img src="https://cdn.uengage.io/uploads/10295/image-1137-1737477749.JPG" alt="Album 3">
+				<h3>FIsh-Biryani</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum amet at totam doloremque magni similique. Molestiae nihil quisquam minus dolore deleniti nesciunt, obcaecati eveniet culpa explicabo labore? Cupiditate, sed?</p>
+			</div>
+			<div class="Briyani">
+				<img src="https://palatesdesire.com/wp-content/uploads/2022/05/Egg-biryani-recipe@palates-desire.jpg" alt="Album 4">
+				<h3>Egg Briyani</h3>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus adipisci consequuntur, iure autem optio error amet magnam doloribus perferendis nihil cum officiis neque! Assumenda placeat consequuntur dolore. Laboriosam, architecto totam.</p>
+			</div>
+		</section>
+    
+   
+     
+  <div class="a" style="margin-top: 50px;" id="pricing">
+    <h1>PRICING</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam dolor ipsam possimus accusamus soluta deleniti
+      perferendis velit tempore, facilis sit veniam ex, nostrum voluptatum harum nam et culpa obcaecati sunt. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Tempore, odit nam dolore reiciendis repellat vero ipsa ullam
+      rerum a. Reprehenderit debitis iusto sint molestiae obcaecati, praesentium voluptatum. Accusamus, iste incidunt?
+    </p>
+  </div>
+  <div class="a" id="test">
+    <h1>TESTINOMIALS</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam dolor ipsam possimus accusamus soluta deleniti
+      perferendis velit tempore, facilis sit veniam ex, nostrum voluptatum harum nam et culpa obcaecati sunt. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Tempore, odit nam dolore reiciendis repellat vero ipsa ullam
+      rerum a. Reprehenderit debitis iusto sint molestiae obcaecati, praesentium voluptatum. Accusamus, iste incidunt?
+    </p>
+  </div>
+  <div class="container1">
+    <div class="i1">
+      <img src="https://clubmahindra.gumlet.io/blog/images/Lucknowi-Biryani-resized.jpg?w=376&dpr=2.6" alt="">
+    </div>
+    <div class="i2"> <img src="https://www.awesomecuisine.com/wp-content/uploads/2013/06/Kalyani-biryani.jpg" alt="">
+    </div>
+    <div class="i3"> <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg"
+        alt=""></div>
+    <div class="i4"> <img src="https://www.awesomecuisine.com/wp-content/uploads/2013/06/Bombay-biryani.jpg" alt="">
+    </div>
+    <div class="i5"> <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/mutton-hyderabadi-biryani-01.jpg"
+        alt="">
+
+    </div>
+    <div class="i6">
+      <img src="https://files.mob-cdn.co.uk/recipes/2024/10/One-Pot-FIsh-Biryani.jpg" alt="">
+
+    </div>
+  </div>
+   
+  <div style="display: flex;justify-content: space-around;background-color: rgba(247, 91, 91, 0.978);margin-top: 5px;">
+    <p>All rights reserved Copyright © 2014 FLATPACK by PixFort</p>
+    <p>Your likes & share makes us happy!</p>
+    <p>Contact:- +917892XXXXX</p>
+  </div>
+
+</body>
+
+</html>
